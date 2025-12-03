@@ -1,0 +1,110 @@
+.header__box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.header__find {
+    display: flex;
+}
+
+.header__img {
+    width: 16px;
+}
+
+.header__title {
+    position: absolute;
+    left: 540px;
+    top: 3px;
+    color: #fff;
+}
+
+.header__nav {
+    padding: 20px 0;
+    background: #343c52;
+}
+
+.header__btn {
+    background: #343c52;
+    cursor: pointer;
+    font-size: 35px;
+    color: #fff;
+}
+
+.header__find {
+    height: 25px;
+    position: absolute;
+    left: 880px;
+}
+
+.header__input {
+    max-width: 150px;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.header__input_btn {
+    padding: 4px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.header__switch {
+    order: 99;
+    position: relative;
+    width: 52px;
+    height: 27px;
+    display: inline-block;
+}
+
+.header__switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.header__slider {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #000; 
+}
+
+.header__slider:before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 2px;
+    top: 2px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.header__switch input:checked + .header__slider {
+    background: #fff;
+}
+
+.header__switch input:checked + .header__slider:before {
+    transform: translateX(24px);
+    background: #000;
+}
+
+body.dark {
+    background: #000;
+    color: #fff;
+}
+
+.header__input {
+    color: #000; 
+}
+

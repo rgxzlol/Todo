@@ -1,0 +1,40 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito";
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body.dark .header__nav {
+    background: #111; 
+}
+
+body.dark .header__btn {
+    background: #111;
+}

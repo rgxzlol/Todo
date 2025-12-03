@@ -1,0 +1,61 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header__title {
+        left: 450px !important;
+    }
+
+    .header__find {
+        width: 150px;
+        left: 700px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header__title {
+        left: 335px !important;
+    }
+
+    .header__find {
+        width: 150px;
+        left: 490px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .header__title {
+        position: static !important;
+        order: -1;
+    }
+
+    .header__find {
+        position: static !important;
+        order: 99;
+    }
+
+    .header__box {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+ .header__box {
+    gap: 10px;
+ }
+ .card.container {
+    margin-top: 10px !important;
+ }
+}

@@ -1,0 +1,113 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: 0.3s;
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #343c52;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal__title {
+  background: #343c52;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.modal__desc {
+  background: #343c52;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.modal__textarea {
+  resize: none;
+  height: 60px;
+    padding: 5px;
+  background: #a0a0a0;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.modal__btn {
+  background: #343c52;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Nunito';
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal__input {
+  padding: 5px;
+  background: #a0a0a0;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.modal__close_img {
+  width: 16px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal__btns {
+  display: flex;
+  gap: 10px;
+}
+
+.modal__btn {
+  width: 100%;
+}
+
+.modal__delete {
+  background: #ff4d4d;
+}
+
+body.dark .modal__box {
+  background: #2c2f38;
+  border: 1px solid #fff;
+}
+
+body.dark .modal__close_img {
+  filter: invert();
+}
+
+body.dark .modal__title,
+body.dark .modal__desc,
+body.dark .modal__btn {
+  background: #fff;
+  color: #000;
+}
+
+body.dark .modal__textarea,
+body.dark .modal__input {
+  background: #555555;
+  color: #fff;
+}
